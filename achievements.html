@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements | Saiprasad Reddy Poola</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--color-black);
+            font-size: 2.2rem;
+        }
+
+        .cert-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-cream-light);
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-cream);
+        }
+
+        .cert-icon {
+            font-size: 2.5rem;
+            color: var(--color-cream-dark);
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .cert-content {
+            flex-grow: 1;
+        }
+
+        .cert-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--color-black);
+        }
+
+        .cert-issuer {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .cert-date {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .cert-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">Saiprasad Reddy</a>
+            <ul class="nav-menu">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="achievements.html" class="nav-link active">Achievements</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">CV <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#" class="view-cv-trigger">View CV</a>
+                        <a href="assets/cv/cv.pdf" download>Download CV</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Achievements Section -->
+    <section class="section">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 4rem;">Achievements & Certificates</h1>
+
+            <!-- Badges -->
+            <div class="reveal" style="margin-bottom: 60px;">
+                <h2 class="text-cream-dark" style="text-align: center; margin-bottom: 30px;">Badges</h2>
+                <div class="grid-2">
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-award"></i></div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">ILT: Distributed Systems and Transactions</h3>
+                            <div class="cert-issuer">MongoDB Badge</div>
+                            <span class="cert-date">August 2025</span>
+                            <a href="https://www.credly.com/org/mongodb/badge/ilt-distributed-systems-and-transactions-da630.1"
+                                class="btn btn-outline" style="padding: 5px 15px; font-size: 0.8rem;">View
+                                Credential</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Tech Savvy Engagement Manager</h3>
+                            <div class="cert-issuer">MongoDB Badge</div>
+                            <span class="cert-date">July 2025</span>
+                            <a href="https://www.credly.com/org/mongodb/badge/mongodb-tech-savvy-engagement-manager#"
+                                class="btn btn-outline" style="padding: 5px 15px; font-size: 0.8rem;">View
+                                Credential</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificates -->
+            <div class="reveal">
+                <h2 class="text-cream-dark" style="text-align: center; margin-bottom: 30px;">Certifications</h2>
+                <div class="grid-2">
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Basics of DSA using C++</h3>
+                            <div class="cert-issuer">Centre for Professional Enhancement</div>
+                            <span class="cert-date">July 2025</span>
+                            <a href="assets/certificates/Summer training.pdf" class="btn btn-outline" target="_blank"
+                                style="padding: 5px 15px; font-size: 0.8rem;">View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Computer Communications</h3>
+                            <div class="cert-issuer">University of Colorado</div>
+                            <span class="cert-date">November 2024</span>
+                            <a href="assets/certificates/Coursera Computer communications.pdf" class="btn btn-outline"
+                                target="_blank" style="padding: 5px 15px; font-size: 0.8rem;">View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-code"></i></div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Mastering in C: Basic to Beyond</h3>
+                            <div class="cert-issuer">CSE Pathshala</div>
+                            <span class="cert-date">March 2024</span>
+                            <a href="assets/certificates/cse patashala.pdf" class="btn btn-outline" target="_blank"
+                                style="padding: 5px 15px; font-size: 0.8rem;">View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fab fa-free-code-camp"></i></div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Legacy Responsive Web Design</h3>
+                            <div class="cert-issuer">freeCodeCamp</div>
+                            <span class="cert-date">November 2023</span>
+                            <a href="assets/certificates/freeCodeCamp.pdf" class="btn btn-outline" target="_blank"
+                                style="padding: 5px 15px; font-size: 0.8rem;">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra Curricular -->
+            <div class="reveal" style="margin-top: 60px;">
+                <h2 class="text-cream-dark" style="text-align: center; margin-bottom: 30px;">Volunteering</h2>
+                <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                    <h3 class="cert-title">Aikya National Foundation</h3>
+                    <p>Tree Plantation Drive</p>
+                    <p class="cert-date" style="margin-top: 10px;">July 2024</p>
+                    <p>Contributed to environmental sustainability by participating in a massive tree plantation drive.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <a href="assets/certificates/cdp.pdf" class="btn btn-outline" target="_blank"
+                            style="padding: 5px 15px; font-size: 0.8rem;">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/saiprasad-reddy-poola-a1817a2a2/" target="_blank"
+                    class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Saiprasad2137" target="_blank" class="social-icon"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/saiprasad.03__/" target="_blank" class="social-icon"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:saiprasadreddy2137@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-divider"></div>
+            <p>&copy; 2026 Saiprasad Reddy Poola. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- CV Modal -->
+    <div id="cv-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="cv-container">
+                <img src="images/CV PEA_page-0001.jpg" alt="CV Page 1" class="cv-image">
+                <img src="images/CV PEA_page-0002.jpg" alt="CV Page 2" class="cv-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

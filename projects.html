@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Saiprasad Reddy Poola</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+        .project-card {
+            background: var(--color-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-cream-light);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-cream);
+        }
+
+        .project-img {
+            height: 200px;
+            background-color: #eee;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            object-position: top;
+        }
+
+        .project-card:hover .project-img img {
+            transform: scale(1.1);
+        }
+
+        .project-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--color-black);
+            font-weight: 600;
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tech-badge {
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            background: var(--color-cream-light);
+            border-radius: 15px;
+            color: var(--color-charcoal);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-link {
+            font-size: 1.2rem;
+            color: var(--color-charcoal);
+            transition: var(--transition-fast);
+        }
+
+        .project-link:hover {
+            color: var(--color-cream-dark);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-logo">Saiprasad Reddy</a>
+            <ul class="nav-menu">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">CV <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#" class="view-cv-trigger">View CV</a>
+                        <a href="assets/cv/cv.pdf" download>Download CV</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="section">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 1rem;">My Projects</h1>
+            <p
+                style="text-align: center; margin-bottom: 4rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                A selection of my recent work, featuring full-stack applications and innovative solutions.
+            </p>
+
+            <div class="grid-2">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="images/managex_dashboard.png" alt="Personal Training System Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Training System</h3>
+                        <p class="project-desc">A comprehensive system streamlining client management, workout plans,
+                            and training schedules. Reduced manual data handling by 50%.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Saiprasad2137/PT.git" title="View Code"><i
+                                    class="fab fa-github"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="images/loomify.jpg" alt="Loomify Marketplace">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Loomify - Marketplace</h3>
+                        <p class="project-desc">Online marketplace connecting local artisans with buyers. Features
+                            dynamic product listings, search/filter, and CRUD operations.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">JS</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sashank206/Loomify.git" title="View Code"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://loomify.great-site.net/" title="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="images/ai_chatbot.png" alt="AI Interview Chatbot Interface">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Interview Chatbot</h3>
+                        <p class="project-desc">DSA interview simulation system with adaptive questions and real-time
+                            feedback logic.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">C++</span>
+                            <span class="tech-badge">DSA</span>
+                            <span class="tech-badge">HTML/CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Saiprasad2137/AiChatBot.git" title="View Code"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/saiprasad-reddy-poola-a1817a2a2/" target="_blank"
+                    class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Saiprasad2137" target="_blank" class="social-icon"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/saiprasad.03__/" target="_blank" class="social-icon"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="mailto:saiprasadreddy2137@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-divider"></div>
+            <p>&copy; 2026 Saiprasad Reddy Poola. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- CV Modal -->
+    <div id="cv-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="cv-container">
+                <img src="images/CV PEA_page-0001.jpg" alt="CV Page 1" class="cv-image">
+                <img src="images/CV PEA_page-0002.jpg" alt="CV Page 2" class="cv-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
